@@ -18,7 +18,7 @@ app.get('/', (req, res) => {
 
 app.post('/', (req, res) => {
   const { amount, subscriptionType } = req.body
-  const invoiceDates = getInvoiceDates(req.body)
+  const invoiceDates = getInvoiceDates(req.body, subscriptionType)
 
   const response = {
     amount,

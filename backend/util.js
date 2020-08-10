@@ -49,7 +49,7 @@ const getMonthlyInvoiceDates = ({ startDate, endDate, dateOfTheMonth }) => {
   return invoiceDates
 }
 
-const getInvoiceDates = data => {
+const getInvoiceDates = (data, subscriptionType) => {
   const invoiceDates =
     subscriptionType === 'DAILY'
       ? getDailyInvoiceDates(data)
