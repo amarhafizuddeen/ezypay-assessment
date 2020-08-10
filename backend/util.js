@@ -56,6 +56,8 @@ const getInvoiceDates = data => {
       : subscriptionType === 'WEEKLY'
       ? getWeeklyInvoiceDates(data)
       : getMonthlyInvoiceDates(data)
+
+  return invoiceDates
 }
 
 module.exports = {
